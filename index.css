@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 400;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./img/game-console-6603120.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+#nav-id a {
+    color: #f8f8ec;
+    text-decoration: none;
+    transition: 1000ms;
+}
+
+#nav-id a span {
+    color: #0fc3e8;
+}
+
+#nav-id a:hover {
+    color: #0fc3e8;
+}
+
+#nav-id {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-id h1 {
+    margin-left: 4rem;
+    font-size: 2rem;
+}
+
+#nav-id ul {
+    margin-right: 4rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 2.5rem;
+    margin-top: 2.6rem;
+    font-size: 0.9rem;
+}
+
+#principal {
+    margin-top: 8.5rem;
+    margin-left: 4rem;
+}
+
+#principal div h1 {
+    font-size: 2.5rem;
+    color: #f8f8ec;
+    margin-bottom: 0.5rem;
+}
+
+#principal div p {
+    color: #f8f8ec;
+    margin-top: 0.5rem;
+}
+
+#principal #btn-id {
+    margin-top: 1.5rem;
+    width: 8rem;
+    height: 2.7rem;
+    border-radius: 6px;
+    background-color: #dadad8;
+    transition: 1000ms;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-style: none;
+}
+
+#principal #btn-id:hover {
+    font-size: 1.2rem;
+    background-color: #0fc3e8;
+}
+
+#btn-menu {
+    display: none;
+}
+
+#btn-close {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+
+    .nav-class {
+        display: block;
+        margin-top: 0;
+        background-color: white;
+        position: fixed;
+        height: 100vh;
+        width: 14rem;
+        display: flex;
+        flex-direction: column;
+        left: -14rem;
+        top: 0;
+        transition: 500ms;
+    }
+
+    .show-base-menu {
+        left: 0;
+        transition: 500ms;
+    }
+
+    #nav-id ul {
+       display: flex;
+       flex-direction: column;
+       margin-top: 5rem;
+    }
+
+    #nav-id ul a {
+        color: black;
+    }
+
+    #nav-id h1 {
+        display: none;
+    }
+
+    #btn-menu {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 3rem;
+        background: none;
+        border-style: none;
+        color: white;
+    }
+
+    #btn-close {
+        transition: 500ms;
+    }
+
+    .show-base-menu #btn-close {
+        position: fixed;
+        display: inline-block;
+        left: 11rem;
+        top: 1rem;
+        background: none;
+        border-style: none;
+        font-size: 2rem;
+    }
+
+}
