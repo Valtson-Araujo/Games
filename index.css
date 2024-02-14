@@ -21,27 +21,27 @@ body {
 }
 
 
-#nav-id a {
+#id-header a {
     color: #f8f8ec;
     text-decoration: none;
     transition: 1000ms;
 }
 
-#nav-id a span {
+#id-header a span {
     color: #0fc3e8;
 }
 
-#nav-id a:hover {
+#id-header a:hover {
     color: #0fc3e8;
 }
 
-#nav-id {
+#id-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#nav-id h1 {
+#id-header h1 {
     margin-left: 4rem;
     font-size: 2rem;
 }
@@ -62,12 +62,12 @@ body {
 
 #principal div h1 {
     font-size: 2.5rem;
-    color: #f8f8ec;
+    color: #fff;
     margin-bottom: 0.5rem;
 }
 
 #principal div p {
-    color: #f8f8ec;
+    color: #fff;
     margin-top: 0.5rem;
 }
 
@@ -81,6 +81,7 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     border-style: none;
+    cursor: pointer;
 }
 
 #principal #btn-id:hover {
@@ -93,7 +94,13 @@ body {
 }
 
 #btn-close {
-    display: none;
+    position: fixed;
+    display: inline-block;
+    left: -14rem;
+    background: none;
+    border-style: none;
+    font-size: 2rem;
+    top: 3rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -127,14 +134,18 @@ body {
         color: black;
     }
 
-    #nav-id h1 {
-        display: none;
+    #id-header h1 {
+        margin-top: 1.6rem;
+    }
+
+    #principal {
+        margin-top: 7rem;
     }
 
     #btn-menu {
         display: block;
         position: fixed;
-        right: 1rem;
+        right: 4rem;
         top: 3rem;
         background: none;
         border-style: none;
